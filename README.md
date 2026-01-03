@@ -33,8 +33,7 @@ You just need **Docker Desktop** installed and running.
 I set this up to be as easy as possible to run. Just follow these steps:
 
 1.  **Clone the repo:**
-    git clone <YOUR_GITHUB_REPO_LINK_HERE>
-    cd smart-city-pipeline
+    git clone [https://github.com/Brandyn-Ewanek/smart-city-pipeline](https://github.com/Brandyn-Ewanek/smart-city-pipeline) cd smart-city-pipeline
 
 2.  **Start the environment:**
     Run this command to build the Python images and start the containers.
