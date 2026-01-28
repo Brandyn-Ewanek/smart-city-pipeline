@@ -16,10 +16,11 @@ to install Kafka or Mongo manually.
 
 ```mermaid
 graph LR
-    A[Producer Service<br/>(Python + Faker)] -->|Generates JSON Data| B(Kafka Broker<br/>Topic: sensor-data)
-    B -->|Streams Data| C[Consumer Service<br/>(Python + Pymongo)]
-    C -->|Validates & Upserts| D[(MongoDB<br/>Database)]
+    A["Producer Service<br/>(Python + Faker)"] -->|Generates JSON Data| B("Kafka Broker<br/>Topic: sensor-data")
+    B -->|Streams Data| C["Consumer Service<br/>(Python + Pymongo)"]
+    C -->|Validates & Upserts| D[("MongoDB<br/>Database")]
     E[Zookeeper] -.->|Manages| B
+```
 
 ## How it Works
 The pipeline has three main parts that talk to each other:
